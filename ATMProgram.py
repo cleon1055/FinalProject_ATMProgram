@@ -19,7 +19,8 @@ continues and user can pick another transaction option.
 
 If the user chooses  "Withdraw" option, the program takes in user input of desired withdraw
 amount. If the withdraw amount is more than the available balance, an "Insufficient funds" message
-displays and a transaction must be chosen again. If the withdraw amount is less than available balance, than a "Transaction Successful" message
+displays and a transaction must be chosen again. If the withdraw amount is less than available balance, 
+than a "Transaction Successful" message
 is displayed alongside the users new balance after the transaction. 
 Next, the user is then asked if they wish to make another transacion; If no, program 
 exits displaying a message "Thank you for using this ATM" to the user, but if yes, program 
@@ -34,4 +35,58 @@ continues and user can pick another transaction option.
 
 If the user chooses to see "Exit" option, the program exits and "Thank you for using ATM" message is displayed to user.
 
+"""
+
+"""                         Pseudocode - ATM Program
+
+Print to user ("Please insert your card)
+Ask user input () for card pin
+balance = $$$$
+
+if pin is correct
+    print("Welcome to Sierra Valley ATM)
+    Print("Select Transaction option
+
+    1) Balance
+    2) Withdraw
+    3) Deposit
+    4) Exit ATM 
+    " ) 
+
+    While true:
+        option = input of user transaction desired selection  
+
+        if option = 1: 
+            print balance to user
+            Print message to user and take input if they wish to make another transaction
+            If yes:
+                continue
+            If else: 
+                print "Thank you for using Sierra Valley ATM" to user
+                exit ATM Program
+        elif option = 2:
+            print (available balance, balance)
+            withdraw = user input of desired amount 
+            if balance > withdraw
+                total = balance - withdraw
+                print ("Transaction successful")
+                print (new balance to user, total)
+            else:
+                print "Insufficient funds"
+        elif option = 3
+            print (available balance, balance)
+            deposit = user input of desired amount 
+            totalbalance = balance + deposit amount
+                print ("Transaction successful")
+                print (Total new balance to user, totalbalance)
+        elif option = 4
+            print("Thank you for using this ATM")
+            exit ()
+        else:
+            print("no selected transaction")
+
+else: 
+    print("Wrong pin, please try again")
+    user input(users card pin )
+        
 """
