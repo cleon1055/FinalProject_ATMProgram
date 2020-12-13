@@ -62,7 +62,7 @@ if pin is correct
             Print message to user and take input if they wish to make another transaction
             If yes:
                 continue
-            If else: 
+            else: 
                 print "Thank you for using Sierra Valley ATM" to user
                 exit ATM Program
         elif option = 2:
@@ -91,3 +91,56 @@ else:
     user input(users card pin )
         
 """
+
+print("Please insert your card")
+pin = int(input("Enter your card pin: "))
+
+balance = 1000
+
+if pin == 1234:
+    print("""
+    ---- Welcome to Sierra Valley ATM ----
+    Please Select A Transaction option
+
+    1) Balance
+    2) Withdraw
+    3) Deposit
+    4) Exit ATM 
+
+    """) 
+
+    while True:
+        option = int(input("Enter desired transaction option: "))  
+
+        if(option == 1): 
+            print("Your balance is: ", balance) 
+            anothertrans = input("Do you wish to make another transaction YES/NO: ") 
+            if(anothertrans == "YES"): 
+                continue
+            else: 
+                print("Thank you for using Sierra Valley ATM!")
+                break 
+        elif(option == 2):
+            print("Available balance: ", balance)
+            withdraw = float(input("Enter desired amount to withdraw: ")) 
+            if(balance > withdraw): 
+                total = balance - withdraw
+                print("Transaction successful!")
+                print("Your new balance is: ", total)
+            else:
+                print("Insufficient balance")
+        elif(option == 3):
+            print("Available balance: ", balance)
+            deposit = float(input("Enter desired amount to withdraw: "))  
+            totalbalance = balance + deposit
+            print("Transaction successful!")
+            print ("Total balance is now: ", totalbalance)
+        elif(option == 4):
+            print("Thank you for using Sierra Valley ATM!")
+            exit ()
+        else:
+            print("No selected transaction")
+
+else: 
+    print("Wrong pin, please try again")
+    input("Enter your card pin: ")
