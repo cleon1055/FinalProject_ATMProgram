@@ -41,7 +41,8 @@ If the user chooses to see "Exit" option, the program exits and "Thank you for u
 
 Print to user ("Please insert your card)
 Ask user input () for card pin
-balance = $$$$
+balance = set balance$$$$
+pin = set pin 
 
 if pin is correct
     print("Welcome to Sierra Valley ATM)
